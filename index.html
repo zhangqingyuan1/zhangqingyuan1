@@ -6,6 +6,20 @@
 <link rel="icon" href="屏幕截图 2023-08-04 145046.png" sizes="16*16">
 </head>
 <body>
+ <style>
+  button{ 
+	position: absolute;
+	left: 150px;
+	top:300px;
+	background: #002CFF;
+	color: #FFFFFF;
+	border-radius:10px;
+	padding:19px;
+	width: 200px;
+	font-size: 20px;
+	
+}
+</style>
  <script>
  window.alert("欢迎来到呱网")
  window.alert("🐸")
@@ -49,8 +63,35 @@
 	 <p><a href="https://www.microsoft.com/"><font size="3" color="#000000">微软</font></a></p>
 	 <p><a href="https://github.com/"><font size="3" color="#000000">Github</font></a></p>
 	 <p><a href="https://www.itmop.com/"><font size="3" color="#000000">软件下载站</font></a></p>
+	 
  </div>
-<div style="left: 650px; position: absolute; top: 2000px">
+ <div style="left: 500px; position: absolute; top: 1700px">
+    <hr/>
+  <font size="10">
+	<script type="text/javascript">
+		var obj=document.getElementById('mynum')
+		var num=obj.innerText;
+	
+		setInterval(function() {
+		 num++;
+		 obj.innerText=num;
+			
+		},86400000‬);
+   </script>
+    <div align="center">沉痛纪念蔺相元离去第<span id="mynum">60</span>天</div>
+  </font>
+  <button onClick="add()">点我祭祀</button>
+  <p>已祭祀次数<input type="text" id="text" value="0"/></p>
+  <script type="text/javascript">
+    function add(){
+        var  x=document.getElementById("text");
+        var  a= x.value;
+        a++;
+        x.value=a;
+    }
+  </script>
+ </div>  
+<div style="left: 650px; position: absolute; top: 2100px">
  <a href="mailto:ads13592096382@outlook.com?Subject=Hello" target="_top">
 	 <font size="6" color="#000000">
         给🐸发邮件
