@@ -1,12 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>呱网</title>
 <link rel="icon" href="屏幕截图 2023-08-04 145046.png" sizes="16*16">
+<script src="jquery-3.5.1.js"></script>
 </head>
 <body>
- <style>
+<!--CSS样式定义-->
+ <style type="text/css">
   button{ 
 	position: absolute;
 	left: 150px;
@@ -18,14 +20,45 @@
 	width: 200px;
 	font-size: 20px;
 	
- }
- </style>
+	}
+   #h{
+		 font-size: 50px
+	}
+	 .font{
+		 font-size:25px 
+	}
+	 .font2{
+		 font-size: 40px;
+		 color: #000000；
+		  
+	 }
+	a:link {color:#000000;}     /* 未访问链接*/
+	a:visited {color:#00FBEF;}  /* 已访问链接 */
+	a:hover {color:#89FF00;}  /* 鼠标移动到链接上 */
+	a:active {color:#15AAC0;} /* 鼠标点击时 */
+	 #sy{
+		 color: #FF0000
+	 }
+	 #zs{
+		 color: #81FF00
+	 }
+	 #lxy{
+		 font-size: 50px
+	 }
+	 #Email{
+		 font-size: 30px
+	 }
+	 .herfs{
+		 font-size: 15px
+	 }
+</style>
+<!--[青蛙]-->
  <script>
  window.alert("欢迎来到呱网")
  window.alert("🐸")
  </script>
 <h1 align="center">你好</h1>
-    <p align="center"><font size="20">这是zqy的个人网站🐸</font></p>
+    <p align="center" id="h">这是zqy的个人网站🐸</p>
     <p align="center">&nbsp;</p>
     <p align="center">&nbsp;</p>
 	<p align="center">&nbsp;</p>
@@ -44,30 +77,39 @@
      <img src="DM_20230828084839_001.svg" alt="链接" width="150" style="position:absolute; left:1170px; top:400px ">
   </a>
 	
-   <div style="left: 200px; position: absolute; top: 550px;"><font size="5">软件</font></div>
-   <div style="left: 700px; position: absolute; top: 550px;"><font size="5">资源</font></div>
-   <div style="left: 1200px; position: absolute; top: 550px;"><font size="5">链接</font></div>
+   <div style="left: 200px; position: absolute; top: 550px;" class="font">软件</div>
+   <div style="left: 700px; position: absolute; top: 550px;" class="font">资源</div>
+   <div style="left: 1200px; position: absolute; top: 550px;" class="font">链接</div>
  <div style="left: 500px; position: absolute; top: 850px">
 	<h2><a id="rj"></a>软件</h2>
-   <a href="资源编辑器(Resource Hacker)5.1.7汉化版.exe" download="资源编辑器(Resource Hacker)5.1.7汉化版.exe"><img src="11386_48_1524208341.svg" alt="Resource Hacker">&nbsp;<font size="30" color="#000000">&nbsp;Resource Hacker</font></a>
+   <a href="资源编辑器(Resource Hacker)5.1.7汉化版.exe" download="资源编辑器(Resource Hacker)5.1.7汉化版.exe">
+	   <img src="11386_48_1524208341.svg" alt="Resource Hacker">&nbsp;
+	   <span class="font2">&nbsp;Resource Hacker</span>
+   </a>
      <p>资源编辑器</p>
-   <a href="GenP 3.0.2 20230226.exe" downlaod="GenP 3.0.2 20230226.exe"> <p> <img src="20201009095459739.svg" width="48" height="48" alt="Genp"><font size="30" color="#000000">Genp</font><font color="#FF0000"><strong>(慎用)</strong></font></p></a>
+   <a href="GenP 3.0.2 20230226.exe" downlaod="GenP 3.0.2 20230226.exe"> 
+	   <p> 
+		   <img src="20201009095459739.svg" width="48" height="48" alt="Genp">
+		   <span class="font2">Genp</span><strong id="sy">(慎用)</strong>
+	   </p>
+   </a>
      <p>破解Adobe</p>
-   <h2><a id="zy">资源</a></h2>
-	 <a href="hosts" download="hosts"><font size="30" color="#000000">Windows Hosts文件<font color="#81FF00" size="3"><strong>(需将后缀名.txt删去)</strong></font></font></a>
+   <h2><a id="zy"></a>资源</h2>
+	 <a href="hosts" download="hosts">
+		 <span class="font2">Windows Hosts文件</span><strong id="zs">(需将后缀名.txt删去)</strong>
+	 </a>
 	 <p>可用与激活Adobe，访问Onedrive，Github等</p>
-   <h2><a id="lj">链接</a></h2>
-     <p><a href="https://www.bilibili.com/"><font size="3" color="#000000">B站</font></a>&nbsp;</p>
-	 <p><a href="https://www.bing.com/"><font size="3" color="#000000">必应</font></a></p>
-	 <p><a href="https://www.adobe.com/"><font size="3" color="#000000">Adobe</font></a></p>
-	 <p><a href="https://www.microsoft.com/"><font size="3" color="#000000">微软</font></a></p>
-	 <p><a href="https://github.com/"><font size="3" color="#000000">Github</font></a></p>
-	 <p><a href="https://www.itmop.com/"><font size="3" color="#000000">软件下载站</font></a></p>
+   <h2><a id="lj"></a>链接</h2>
+     <p class="herfs"><a href="https://www.bilibili.com/">B站</a>&nbsp;</p>
+	 <p class="herfs"><a href="https://www.bing.com/">必应</a></p>
+	 <p class="herfs"><a href="https://www.adobe.com/">Adobe</a></p>
+	 <p class="herfs"><a href="https://www.microsoft.com/">微软</a></p>
+	 <p class="herfs"><a href="https://github.com/">Github</a></p>
+	 <p class="herfs"><a href="https://www.itmop.com/">软件下载站</a></p>
 	 
  </div>
  <div style="left: 500px; position: absolute; top: 1700px">
     <hr/>
-  <font size="10">
 	<script type="text/javascript">
 		var obj=document.getElementById('mynum')
 		var num=obj.innerText;
@@ -75,11 +117,10 @@
 		setInterval(function() {
 		 num++;
 		 obj.innerText=num;
-
-		},86400000);
+			
+		},86400000‬);
    </script>
-    <div align="center">沉痛纪念蔺相元离去第<span id="mynum">60</span>天</div>
-  </font>
+    <div align="center" id="lxy">沉痛纪念蔺相元离去第<span id="mynum">60</span>天</div>
   <button onClick="add()">点我祭祀</button>
   <p>已祭祀次数<input type="text" id="text" value="0"/></p>
   <script type="text/javascript">
@@ -90,12 +131,13 @@
         x.value=a;
     }
   </script>
- </div>  
+ </div>
+<div align="left" style="left: 1300px; position: absolute; top: 1900px">
+ <iframe align="right" width="900" height="500" src="flyfs.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
 <div style="left: 650px; position: absolute; top: 2100px">
- <a href="mailto:ads13592096382@outlook.com?Subject=Hello" target="_top">
-	 <font size="6" color="#000000">
+ <a href="mailto:ads13592096382@outlook.com?Subject=Hello" target="_top" id="Email">
         给🐸发邮件
-     </font>
  </a>	 
 </div>  
 
